@@ -862,3 +862,22 @@ html.gear5 #sunMark { transform: rotate(360deg); }
 @media (prefers-reduced-motion: reduce) {
   .case-door, .case-reveal { transition-duration: .001ms !important; }
 }
+
+/* Conspiracy Gaming identity: centered raven mark on a near-black hero. */
+.hero { background: #050505; }
+.hero-media { display: none; }
+.hero-shade { display: none; }
+.hero-copy { align-items: center; justify-content: center; text-align: center; padding-top: 7rem; padding-bottom: 6rem; }
+.hero-crest { width: clamp(150px, 24vw, 260px); height: auto; object-fit: contain; margin-bottom: 1.25rem; filter: drop-shadow(0 0 24px rgb(100 255 61 / 0.12)); }
+.hero-copy .badge { order: 2; }
+.hero-copy .hero-crest { order: 1; }
+.hero-copy .hero-kicker { order: 3; }
+.hero-copy .wordmark { order: 4; }
+.hero-copy .hero-sub { order: 5; }
+.hero-copy .hero-lead { order: 6; display: block; max-width: 42rem; color: var(--muted); margin-top: 1rem; }
+.hero-copy .bst { order: 7; }
+.hero-copy .hero-actions { order: 8; justify-content: center; }
+@media (min-width: 768px) and (min-aspect-ratio: 1 / 1) {
+  .hero-copy { justify-content: center; padding-top: 7rem; padding-bottom: 5rem; }
+}
+.nav.scrolled { background: rgb(5 5 5 / 0.92); }
