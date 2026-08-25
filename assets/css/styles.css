@@ -881,3 +881,33 @@ html.gear5 #sunMark { transform: rotate(360deg); }
   .hero-copy { justify-content: center; padding-top: 7rem; padding-bottom: 5rem; }
 }
 .nav.scrolled { background: rgb(5 5 5 / 0.92); }
+
+/* New Conspiracy asset treatment: local crops, responsive framing, no screenshot chrome. */
+.hero { min-height: clamp(44rem, 92vh, 58rem); }
+.hero-media { display: block; position: absolute; inset: 0; opacity: .42; pointer-events: none; }
+.hero-media .hero-photo { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; filter: saturate(.95) contrast(1.05); }
+.hero-shade { display: block; position: absolute; inset: 0; background: linear-gradient(90deg, #050505 0%, rgb(5 5 5 / .66) 46%, rgb(5 5 5 / .16) 100%), linear-gradient(0deg, #050505 0%, transparent 26%, rgb(5 5 5 / .28) 100%); pointer-events: none; }
+.hero-copy { position: relative; z-index: 2; }
+.story-art { margin: 3rem auto 0; max-width: 34rem; border: 1px solid rgb(161 255 139 / .24); background: #050505; box-shadow: 0 1.5rem 4rem rgb(0 0 0 / .24); }
+.story-art img { display: block; width: 100%; height: auto; max-height: 34rem; object-fit: cover; object-position: 50% 0%; }
+.floor-hit .responsive-picture img { object-fit: cover; object-position: center; }
+.floor-hit--hero .responsive-picture img { object-position: 50% 45%; }
+.gallery .shot .responsive-picture img, .play-grid .shot .responsive-picture img { object-fit: cover; object-position: center; }
+.gallery .shot:nth-child(1) .responsive-picture img { object-position: 50% 55%; }
+.gallery .shot:nth-child(2) .responsive-picture img { object-position: 50% 42%; }
+.gallery .shot:nth-child(4) .responsive-picture img { object-position: 50% 38%; }
+.play-grid .shot:nth-child(1) .responsive-picture img { object-position: 50% 44%; }
+.play-grid .shot:nth-child(2) .responsive-picture img { object-position: 50% 38%; }
+.hours-art { display: block; width: 100%; max-height: 15rem; margin: 1rem 0 1.15rem; object-fit: cover; object-position: 50% 15%; border: 1px solid rgb(255 255 255 / .12); }
+.visit-visuals { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin: 0 0 1rem; }
+.visit-visuals img { display: block; width: 100%; aspect-ratio: 1.4 / 1; object-fit: cover; border: 1px solid rgb(255 255 255 / .12); }
+@media (max-width: 700px) {
+  .hero { min-height: 48rem; }
+  .hero-media { opacity: .32; }
+  .hero-shade { background: linear-gradient(0deg, #050505 0%, rgb(5 5 5 / .45) 48%, rgb(5 5 5 / .34) 100%); }
+  .story-art img { max-height: 28rem; }
+  .visit-visuals { grid-template-columns: 1fr; }
+}
+
+/* The supplied mark is a black-on-white screenshot crop; invert it for the site's dark identity. */
+#sunMark, .hero-crest, .footer .brand img { filter: invert(1) drop-shadow(0 0 18px rgb(161 255 139 / .12)); }
