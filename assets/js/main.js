@@ -4,9 +4,7 @@ const GAMES = [
   { tag: "Campaigns", name: "Campaigns", note: "Bring your party together for the next chapter.", rarity: "JOIN", no: "003", art: "/assets/media/tabletop-space.webp" },
   { tag: "Games", name: "Games & Merch", note: "Explore the shelves, products and official Conspiracy gear.", rarity: "FIND", no: "004", art: "/assets/media/products-display.webp" },
   { tag: "Inside", name: "The Store", note: "A welcoming space for players, collectors and curious newcomers.", rarity: "ALL", no: "005", art: "/assets/media/store-shelves.webp" },
-  { tag: "Community", name: "The Conspiracy", note: "We are no longer one raven. We are many.", rarity: "CG", no: "006", art: "/assets/media/brand-hero.webp" },
-  { tag: "Location", name: "95 Wolcott Road", note: "Find the table and come join the community in Wolcott.", rarity: "VISIT", no: "007", art: "/assets/media/address-card.webp" },
-  { tag: "Brand", name: "Welcome", note: "Sign up for updates on upcoming events, campaigns and merch.", rarity: "NEWS", no: "008", art: "/assets/media/welcome-story.webp" },
+  { tag: "Community", name: "The Gathering", note: "Room to play, gather and make the next session memorable.", rarity: "CG", no: "006", art: "/assets/media/floor-space.webp" },
 ];
 
 const HOURS = [
@@ -20,16 +18,15 @@ const HOURS = [
 ];
 
 const PHOTOS = [
-  { src: "/assets/media/community-night.webp", alt: "Conspiracy Gaming community gathered around tables", caption: "Community night", w: 1170, h: 565, widths: [480, 768, 1170] },
-  { src: "/assets/media/tabletop-action.webp", alt: "Players gathered around a tabletop game", caption: "Play together", w: 1170, h: 645, widths: [480, 768, 1170] },
-  { src: "/assets/media/products-display.webp", alt: "Conspiracy Gaming products and tabletop displays", caption: "Games & merch", w: 1170, h: 675, widths: [480, 768, 1170] },
-  { src: "/assets/media/store-shelves.webp", alt: "Conspiracy Gaming shelves and store interior", caption: "Find your next game", w: 1170, h: 715, widths: [480, 768, 1170] },
-  { src: "/assets/media/collectibles.webp", alt: "Conspiracy Gaming collectibles display", caption: "Collectibles", w: 1170, h: 855, widths: [480, 768, 1170] },
-  { src: "/assets/media/snacks.webp", alt: "Snacks and drinks at Conspiracy Gaming", caption: "Snacks & drinks", w: 1170, h: 855, widths: [480, 768, 1170] },
-  { src: "/assets/media/tabletop-space.webp", alt: "Tabletop gaming space inside Conspiracy Gaming", caption: "Tabletop space", w: 1170, h: 1770, widths: [480, 768, 1170] },
-  { src: "/assets/media/floor-space.webp", alt: "Open floor space inside Conspiracy Gaming", caption: "Room to gather", w: 1170, h: 925, widths: [480, 768, 1170] },
-  { src: "/assets/media/store-sign.webp", alt: "Conspiracy Gaming store sign", caption: "The store", w: 1170, h: 805, widths: [480, 768, 1170] },
-  { src: "/assets/media/brand-mark.webp", alt: "Conspiracy Gaming raven mark", caption: "The raven mark", w: 1170, h: 805, widths: [480, 768, 1170] },
+  { src: "/assets/media/community-night.webp", alt: "Conspiracy Gaming community gathered around tables", caption: "Community night", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/tabletop-action.webp", alt: "Players gathered around a tabletop game", caption: "Play together", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/products-display.webp", alt: "Conspiracy Gaming products and tabletop displays", caption: "Games & merch", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/store-shelves.webp", alt: "Conspiracy Gaming shelves and store interior", caption: "Find your next game", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/collectibles.webp", alt: "Conspiracy Gaming collectibles display", caption: "Collectibles", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/collectibles-detail.webp", alt: "Close detail of dice and collectibles at Conspiracy Gaming", caption: "The details", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/snacks.webp", alt: "Snacks and drinks at Conspiracy Gaming", caption: "Snacks & drinks", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/tabletop-space.webp", alt: "Tabletop gaming space inside Conspiracy Gaming", caption: "Tabletop space", w: 2560, h: 1440, widths: [480, 768, 1280] },
+  { src: "/assets/media/floor-space.webp", alt: "Open floor space inside Conspiracy Gaming", caption: "Room to gather", w: 2560, h: 1440, widths: [480, 768, 1280] },
 ];
 
 const $ = (s, c = document) => c.querySelector(s);
