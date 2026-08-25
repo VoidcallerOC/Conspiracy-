@@ -1,12 +1,12 @@
 const GAMES = [
-  { tag: "Tabletop Event", name: "Game Nights", note: "Bring your favorite game or learn something new with the community.", rarity: "OPEN", no: "001", art: "/assets/img/event-room.jpg" },
-  { tag: "Roleplaying", name: "Campaigns", note: "Find a table, start a story and make the next session memorable.", rarity: "JOIN", no: "002", art: "/assets/img/play-room.jpg" },
-  { tag: "Community", name: "Tournaments", note: "Compete, cheer each other on and find your next rivalry.", rarity: "PLAY", no: "003", art: "/assets/img/play-hall.jpg" },
-  { tag: "Community", name: "The Conspiracy", note: "A welcoming table for gamers, collectors and curious newcomers.", rarity: "ALL", no: "004", art: "/assets/img/gallery-art.jpg" },
-  { tag: "Collectibles", name: "Anime Figures", note: "From shelf pieces to life-size showstoppers.", rarity: "U", no: "005", art: "/assets/img/pulls/figures.jpg" },
-  { tag: "Collectibles", name: "Funko Pop!", note: "Anime, gaming & pop-culture vinyl — plus exclusives.", rarity: "U", no: "006", art: "/assets/img/pulls/funko.jpg" },
-  { tag: "Reads & Games", name: "Manga & Board Games", note: "Latest volumes, box sets & tabletop nights.", rarity: "C", no: "007", art: "/assets/img/pulls/manga.jpg" },
-  { tag: "Snack Bar", name: "Japanese Snacks", note: "Ramune, Pocky, Hi-Chew & the cold-drink fridge.", rarity: "C", no: "008", art: "/assets/img/pulls/snacks.jpg" },
+  { tag: "Tabletop Event", name: "Game Nights", note: "Bring your favorite game or learn something new with the community.", rarity: "OPEN", no: "001", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Roleplaying", name: "Campaigns", note: "Find a table, start a story and make the next session memorable.", rarity: "JOIN", no: "002", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Community", name: "Tournaments", note: "Compete, cheer each other on and find your next rivalry.", rarity: "PLAY", no: "003", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Community", name: "The Conspiracy", note: "A welcoming table for gamers, collectors and curious newcomers.", rarity: "ALL", no: "004", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Collectibles", name: "Anime Figures", note: "From shelf pieces to life-size showstoppers.", rarity: "U", no: "005", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Collectibles", name: "Funko Pop!", note: "Anime, gaming & pop-culture vinyl — plus exclusives.", rarity: "U", no: "006", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Reads & Games", name: "Manga & Board Games", note: "Latest volumes, box sets & tabletop nights.", rarity: "C", no: "007", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png" },
+  { tag: "Snack Bar", name: "Japanese Snacks", note: "Ramune, Pocky, Hi-Chew & the cold-drink fridge.", rarity: "C", no: "008", art: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/ed25300a-d7fc-4f1b-a49c-d5fde42f8ad8/7DBE260E-A9FD-4DDD-BD3F-014482F10D7D.jpeg" },
 ];
 
 const HOURS = [
@@ -20,35 +20,30 @@ const HOURS = [
 ];
 
 const PHOTOS = [
-  { src: "/assets/img/store-figures.jpg", alt: "Conspiracy Gaming event space with tables ready for players", caption: "Games, campaigns & community", w: 1350, h: 1800, widths: [480, 768, 1350] },
-  { src: "/assets/img/store-luffy.jpg", alt: "Life-size Luffy Gear 5 statue beside the collectibles shelves", caption: "Our life-size Gear 5 greeter", w: 1300, h: 1733, widths: [480, 768, 1300], top: true },
-  { src: "/assets/img/gallery-figures.jpg", alt: "A welcoming Conspiracy Gaming gathering space", caption: "A space for every kind of player", w: 1150, h: 1331, widths: [480, 768, 1150] },
-  { src: "/assets/img/gallery-art.jpg", alt: "Gaming artwork and community details inside Conspiracy Gaming", caption: "The details behind the table", w: 1170, h: 1412, widths: [480, 768, 1170] },
-  { src: "/assets/img/gallery-merch.jpg", alt: "Conspiracy Gaming merch and community details", caption: "Official Conspiracy merch", w: 1170, h: 1389, widths: [480, 768, 1170] },
-  { src: "/assets/img/store-counter.jpg", alt: "Front counter with Japanese candy, lollipops, drink fridges and a neon star sign", caption: "Snacks, drinks & the neon out front", w: 1300, h: 1733, widths: [480, 768, 1300], wide: true },
-  { src: "/assets/img/play-hall.jpg", alt: "Long communal wooden table with chairs running through the store", caption: "The communal table", w: 1169, h: 1396, widths: [480, 768, 1169] },
-  { src: "/assets/img/event-room.jpg", alt: "Event room with a long table, chairs and figure shelves", caption: "Room for the whole conspiracy", w: 1168, h: 1387, widths: [480, 768, 1168] },
-  { src: "/assets/img/play-room.jpg", alt: "Private play room with a Luffy poster, TV and purple accent wall", caption: "Private room + big screen", w: 1168, h: 1389, widths: [480, 768, 1168] },
-  { src: "/assets/img/store-case.jpg", alt: "A display of games, merch and community favorites", caption: "Games worth gathering around", w: 1200, h: 1600, widths: [480, 768, 1200] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Conspiracy Gaming event space with tables ready for players", caption: "Games, campaigns & community", w: 1350, h: 1800, widths: [480, 768, 1350] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/ed25300a-d7fc-4f1b-a49c-d5fde42f8ad8/7DBE260E-A9FD-4DDD-BD3F-014482F10D7D.jpeg", alt: "Life-size Luffy Gear 5 statue beside the collectibles shelves", caption: "Our life-size Gear 5 greeter", w: 1300, h: 1733, widths: [480, 768, 1300], top: true },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "A welcoming Conspiracy Gaming gathering space", caption: "A space for every kind of player", w: 1150, h: 1331, widths: [480, 768, 1150] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Gaming artwork and community details inside Conspiracy Gaming", caption: "The details behind the table", w: 1170, h: 1412, widths: [480, 768, 1170] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Conspiracy Gaming merch and community details", caption: "Official Conspiracy merch", w: 1170, h: 1389, widths: [480, 768, 1170] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/ed25300a-d7fc-4f1b-a49c-d5fde42f8ad8/7DBE260E-A9FD-4DDD-BD3F-014482F10D7D.jpeg", alt: "Front counter with Japanese candy, lollipops, drink fridges and a neon star sign", caption: "Snacks, drinks & the neon out front", w: 1300, h: 1733, widths: [480, 768, 1300], wide: true },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Long communal wooden table with chairs running through the store", caption: "The communal table", w: 1169, h: 1396, widths: [480, 768, 1169] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Event room with a long table, chairs and figure shelves", caption: "Room for the whole conspiracy", w: 1168, h: 1387, widths: [480, 768, 1168] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "Private play room with a Luffy poster, TV and purple accent wall", caption: "Private room + big screen", w: 1168, h: 1389, widths: [480, 768, 1168] },
+  { src: "https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png", alt: "A display of games, merch and community favorites", caption: "Games worth gathering around", w: 1200, h: 1600, widths: [480, 768, 1200] },
 ];
 
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
 function responsiveSrcset(src, widths, extension) {
-  const stem = src.split("/").pop().replace(/\.jpg$/i, "");
-  return widths.map((width) => `/assets/img/optimized/${stem}-${width}.${extension} ${width}w`).join(", ");
+  return `${src} 1x`;
 }
 
-function responsiveImage({ src, widths, sizes, alt = "", width, height, className = "", loading = "lazy", decoding = "async", fetchPriority = "" }) {
+function responsiveImage({ src, sizes, alt = "", width, height, className = "", loading = "lazy", decoding = "async", fetchPriority = "" }) {
   const classAttr = className ? ` class="${className}"` : "";
   const loadingAttr = loading ? ` loading="${loading}"` : "";
   const fetchPriorityAttr = fetchPriority ? ` fetchpriority="${fetchPriority}"` : "";
-  return `<picture class="responsive-picture">
-    <source type="image/avif" srcset="${responsiveSrcset(src, widths, "avif")}" sizes="${sizes}" />
-    <source type="image/webp" srcset="${responsiveSrcset(src, widths, "webp")}" sizes="${sizes}" />
-    <img${classAttr} src="${src}" alt="${alt}" width="${width}" height="${height}" sizes="${sizes}"${loadingAttr} decoding="${decoding}"${fetchPriorityAttr} />
-  </picture>`;
+  return `<picture class="responsive-picture"><img${classAttr} src="${src}" alt="${alt}" width="${width}" height="${height}" sizes="${sizes}"${loadingAttr} decoding="${decoding}"${fetchPriorityAttr} /></picture>`;
 }
 const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -216,7 +211,7 @@ function initLightbox() {
 
   if (strip) {
     strip.innerHTML = PHOTOS.map(
-      (p, i) => `<button type="button" data-jump="${i}" aria-label="${p.caption}"><img src="/assets/img/optimized/${p.src.split("/").pop().replace(/\.jpg$/i, "")}-${p.widths[0]}.webp" alt="" width="56" height="72" loading="lazy" decoding="async"></button>`,
+      (p, i) => `<button type="button" data-jump="${i}" aria-label="${p.caption}"><img src="https://images.squarespace-cdn.com/content/v1/662b16977dcf7655c50d621a/094f332d-3d78-4078-88c7-534a612b445f/Untitled+-+June+16%2C+2026+at+20.10.55+%281%29.png"/").pop().replace(/\.jpg$/i, "")}-${p.widths[0]}.webp" alt="" width="56" height="72" loading="lazy" decoding="async"></button>`,
     ).join("");
   }
 
